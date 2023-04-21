@@ -107,7 +107,7 @@
 
 <div id="wrapper">
   <div id="sidebar-wrapper" style="width:300px;">
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 290px;">
+    <div class="d-flex flex-column flex-shrink-0 p-2 text-white" style="width: 290px;">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
         style="font-size:30px;">
         IIITL-services
@@ -116,10 +116,10 @@
       <ul class="sidebar-nav flex-column mb-auto">
 
         <a href="{% url 'LNMshop_home' %}">
-          <img src="https://i.ibb.co/Vq8mt47/shop-logo.png" style="border: 1px solid black;border-radius: 8px;"
-            width="260px" height="65px" alt="...">
+          <!-- <img src="https://i.ibb.co/Vq8mt47/shop-logo.png" style="border: 1px solid black;border-radius: 8px;" -->
+            <!-- width="260px" height="65px" alt="..."> -->
         </a>
-        <li></li>
+        <!-- <li></li> -->
         <li>
           <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
             aria-controls="collapseExample">
@@ -208,7 +208,7 @@
           <div class="row mx-auto">
             {% if products %}
             {% for product in products %}
-            <div class="col mx-auto">
+            <div class="col mx-auto ">
               <div class="card mb-4 rounded-end p-3" style="width: 18rem;">
                 <img src="{{product.photo.url}}" class="card-img-top" style="height: 200px; object-fit: contain;"
                   alt="...">
