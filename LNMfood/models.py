@@ -12,9 +12,9 @@ class Blog_food(models.Model):
         Accounts, on_delete=models.CASCADE, null=False, default='')
     space = models.IntegerField(null=False, default=0)
     contact_num = models.BigIntegerField(null=False, default=0)
-    fare = models.IntegerField(null=False, default=0)
-    date = models.DateField(null=False)
-    time = models.TimeField(null=False)
+    # fare = models.IntegerField(null=False, default=0)
+    # date = models.DateField(null=False)
+    # time = models.TimeField(null=False)
     color = models.CharField(max_length=20, default='#007bff')
 
     @staticmethod
