@@ -4,7 +4,17 @@
 <html lang="en">
 
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    
+	</script>
 	<title>IIITL-services</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,101 +22,384 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <style>
-	.button {
-		background-color: #008CBA;
-		/* Green */
-		border: none;
-		color: white;
-		padding: 10px 20px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		transition-duration: 0.4s;
-		cursor: pointer;
-	}
-
-	.button1 {
-		background-color: white;
-		color: black;
-		border: 2px solid #008CBA;
-	}
-
-	.button1:hover {
-		background-color: #008CBA;
-		color: white;
-	}
+	
 
 
-	.button2 {
-		background-color: white;
-		color: black;
-		border: 2px solid #f44336;
-	}
 
-	.button2:hover {
-		background-color: #f44336;
-		color: white;
-	}
+@font-face {
+    font-family: "Awesomefont";
+    src: url("./Raleway-ExtraLight.ttf") ;
+  }
+  
+  .container-iiitl{
+    float:right;
+    width:600px;
+    font-size: 70px;
+    font-weight:bold;
+    margin-top: 40px;
+    color:#F8F8FF;
+    /* add shadow to text */
+    text-shadow: 5px 0 10px #04040a;
+  }
+  
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+     font-family: 'Poppins', sans-serif;;
+    background-image: url(https://i.ibb.co/Df42BHV/20230126-110727-2.jpg);
+    background-size: cover;
+
+    background-attachment: fixed;
+  }
+  /* align items center vertically and horizontally  */
+  .container{
+    display: flex;
+    /* justify-content: center; */
+    align-items:center !important;
+    float:left;
+	
+	width:350px;
+	margin-top: 80px;;
+    margin-left:50px;
+    height: 407px;
+  }
+  .form{
+    width: 350px;
+    height: 450px;
+    background-color: rgba(41, 39, 39, 0.3);
+	backdrop-filter: blur(5px);
+    box-shadow: 0 5px 30px black;
+  }
+  .btn button {
+    padding: 3px;
+    margin: 20px 0px 10px 30px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  .formGroup{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 40px; */
+  }
+  .formGroup input{
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    /* font-weight: bold; */
+    background-color: transparent;
+    color: white;
+  }
+  input:focus {
+    outline: none !important;
+    border-bottom: 2px solid rgb(91, 243, 131);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  ::placeholder {
+    color: white;
+  }
+  .checkBox{
+    display: flex;
+    justify-content: center;
+    margin: 16px!important;
+  }
+   
+  #checkbox{
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  .text{
+    color: rgb(199, 197, 197);
+    font-size: 13px;
+  }
+  .btn2{
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #0053a3;
+    border-style: none;
+    color: white;
+    font-weight: 600;
+  }
+  .btn2:hover{
+    background-color: #0053a3;
+  }
+  .btn button:hover{
+    border-bottom: 2px solid #0053a3;
+  }
+   
+  /* hide signup form */
+  .login{
+    display: none;
+  }
+   
+  /* Login form code */
+  .login{
+    margin-top: 40px;
+  }
+  .login .checkBox{
+    margin-top: 30px !important;
+  }
+
+
+  .hemal {
+    font-family: "Awesomefont";
+    
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+/* body {
+    margin: 0px;
+} */
+
+#container {
+/*     position: absolute; */
+/*     margin: auto; */
+    text-shadow: 3px 3px 10px #000;
+    width: 500px;
+    height: 80pt;
+    margin-top: 10px;
+	color:whitesmoke;
+    
+/*     top: 0;
+    bottom: 0; */
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 450px;
+    display: inline-block;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    text-align: left;
+    
+
+    user-select: none;
+}
 </style>
 
 <body>
 
+	<div class="container-iiitl">
+		IIITL-SERVICES
+		<div id="container">
+			<span id="text1"></span>
+			<span id="text2"></span>
+		</div>
+		
+		<svg id="filters">
+			<defs>
+				<filter id="threshold">
+					<feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+											0 1 0 0 0
+											0 0 1 0 0
+											0 0 0 255 -140" />
+				</filter>
+			</defs>
+		</svg>
+	
+	  </div>
+
+	  
 
 
 	<div class="container">
-		<div class="col-lg-10 text-center mx-auto m-3 p-3">
-			<p class="display-6"><b>Welcome to IIITL-Services!!</b></p>
-			<img style="height: 150px;" src="https://i.ibb.co/PQKCSj9/LNM-1.png" class="mb-1" lt="">
-		</div>
-		<div class="row justify-content-center ">
-			<div class="col-md-6 col-lg-4" style="border:3px solid #dc3545;">
-				<div class="login-wrap p-0">
-					<h3 class="mb-4 text-center">Doesn't Have an account?</h3>
-					<form action='{% url "register" %}' class="register-form" method="POST">
+		
+		<div class="form ">
+			<!-- <div class="col-md-6 col-lg-4"> -->
+				<!-- <div class="login-wrap p-0"> -->
+					<!-- <h3 class="mb-4 text-center">Doesn't Have an account?</h3> -->
+					<div class="btn">
+						<button class="signUpBtn">SIGN UP</button>
+						<button class="loginBtn">
+
+							LOGIN
+						</button>
+					  </div>
+					<form action='{% url "register" %}' class="signUp" method="POST">
 						{% csrf_token %}
-						<div class="form-group mb-3 p-2">
-							<input type="text" name="username" class="form-control" placeholder="Username" required>
+						<div class="formGroup">
+							<input type="text" name="username" id="userName" placeholder="User Name" autocomplete="off" required>
+						  </div>
+						  <div class="formGroup">
+							<input type="text" id="contactNo" name="phone_num" placeholder="Contact No" autocomplete="off" required>
+						  </div>
+						<div class="formGroup">
+						  <input type="email" placeholder="Email ID" name="email" required autocomplete="off" required>
 						</div>
-						<div class="form-group mb-3 p-2">
-							<input type="phone" name="phone_num" class="form-control" placeholder="Contact-Number"
-								required>
+						<div class="formGroup">
+						  <input type="password" name="pass1" id="password" placeholder="Password" required autocomplete="off" required>
 						</div>
-						<div class="form-group mb-3 p-2">
-							<input type="email" name="email" class="form-control" placeholder="Email" required>
+						<div class="formGroup">
+						  <input type="password" name="pass2" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
 						</div>
-						<div class="form-group mb-3 p-2">
-							<input id="password-field1" type="password" class="form-control " placeholder="Password"
-								name="pass1" required>
-							<span toggle="#password-field1" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-						</div>
-						<div class="form-group mb-3 p-2">
-							<input id="password-field2" type="password" class="form-control "
-								placeholder="Re-type Password" name="pass2" required>
-							<span toggle="#password-field2" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-						</div>
-						<div class="form-group">
-							<button type="submit"
-								class=" form-control btn btn-success btn-lg border rounded btn-danger">Register</button>
-						</div>
+						<div class="formGroup">
+							<button type="submit" class="btn2" >Sign Up</button>
+						  </div>
 						<br><br>
 					</form>
-					<div class="social d-flex text-center">
+					<!-- <div class="social d-flex text-center">
 						<a href="{% url 'login'  %}" class="btn btn-lg m-3 button button2"><span
 								class="ion-logo-facebook mr-2"></span> Already Have An Account </a>
-					</div>
+					</div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+
+
+			  <!-- ---- Login Form --------  -->
+			   <form class="login" action='{% url "login" %}' method="POST">
+                    {% csrf_token %}
+				<div class="formGroup">
+				  <input type="username" placeholder="Username" name="username" required autocomplete="off">
 				</div>
-			</div>
+				<div class="formGroup">
+				  <input type="password" name="password" id="password" placeholder="Password" required autocomplete="off" style="margin-top:30px;">
+				</div>
+				<div class="social d-flex text-center">
+					<a href="{% url 'forgot_password'  %}" style="margin-left:40px;"><span
+							class="ion-logo-twitter mr-2"></span>Forgotten password?
+						</a>
+				</div>
+				<div class="formGroup">
+				  <button type="submit" class="btn2" style="margin-top:40px;">Sign In</button>
+				</div>
+				
+		 
+			  </form>
 		</div>
 	</div>
 
-	{% for message in messages %}
+	<!-- {% for message in messages %}
 	<p>{{message}}</p>
-	{% endfor %}
-
+	{% endfor %} -->
+	<script src="jQuery.js"></script>
+	<!-- <script src="script.js"></script> -->
 </body>
 
+<script>
+    /* Show login form on button click */
+ 
+$('.loginBtn').click(function(){
+  $('.login').show();
+  $('.signUp').hide();
+  /* border bottom on button click */
+  $('.loginBtn').css({'border-bottom' : '2px solid #ff4141'});
+  /* remove border after click */
+  $('.signUpBtn').css({'border-style' : 'none'});
+});
+ 
+ 
+/* Show sign Up form on button click */
+ 
+$('.signUpBtn').click(function(){
+  $('.login').hide();
+  $('.signUp').show();
+  /* border bottom on button click */
+  $('.signUpBtn').css({'border-bottom' : '2px solid #ff4141'});
+   /* remove border after click */
+   $('.loginBtn').css({'border-style' : 'none'});
+});
+
+
+
+
+const elts = {
+    text1: document.getElementById("text1"),
+    text2: document.getElementById("text2")
+};
+
+const texts = [
+    'Combine orders', 'Save on delivery chargers', 'Share cab rides', 'Save money :)', 'Sell your items', 'Buy items'
+];
+
+const morphTime = 1;
+const cooldownTime = 0.25;
+
+let textIndex = texts.length - 1;
+let time = new Date();
+let morph = 0;
+let cooldown = cooldownTime;
+
+elts.text1.textContent = texts[textIndex % texts.length];
+elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+function doMorph() {
+    morph -= cooldown;
+    cooldown = 0;
+
+    let fraction = morph / morphTime;
+
+    if (fraction > 1) {
+        cooldown = cooldownTime;
+        fraction = 1;
+    }
+
+    setMorph(fraction);
+}
+
+function setMorph(fraction) {
+    elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+    elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+    fraction = 1 - fraction;
+    elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+    elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+    elts.text1.textContent = texts[textIndex % texts.length];
+    elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+}
+
+function doCooldown() {
+    morph = 0;
+
+    elts.text2.style.filter = "";
+    elts.text2.style.opacity = "100%";
+
+    elts.text1.style.filter = "";
+    elts.text1.style.opacity = "0%";
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+
+    let newTime = new Date();
+    let shouldIncrementIndex = cooldown > 0;
+    let dt = (newTime - time) / 1000;
+    time = newTime;
+
+    cooldown -= dt;
+
+    if (cooldown <= 0) {
+        if (shouldIncrementIndex) {
+            textIndex++;
+        }
+
+        doMorph();
+    } else {
+        doCooldown();
+    }
+}
+
+animate();
+</script>
 </html>
 <br /><br />
