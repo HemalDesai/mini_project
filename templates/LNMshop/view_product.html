@@ -33,6 +33,11 @@
 
 </head>
 <style>
+
+  body{
+    background-color:#060817;
+  }
+
   .title-total {
     padding: 2.5em 1.5em 1.5em 1.5em;
   }
@@ -176,7 +181,11 @@
               {% if products %}
               {% for product in products %}
               <div class="col mx-auto">
-                <div class="card mb-4 rounded-end p-3" style="width: 18rem;">
+                <div class="card mb-4 rounded-end p-3" style="width: 18rem;
+                background-color: #150f30;
+                color:white;
+                border-image: linear-gradient(to right, darkblue, darkorchid) 1; 
+                ">
                   <img src="{{product.photo.url}}" class="card-img-top" style="height: 200px; object-fit: contain;"
                     alt="...">
                   <div class="card-body text-center">
