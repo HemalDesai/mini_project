@@ -1,6 +1,8 @@
 {% extends 'common/base_navbar.html' %}
 {% load static %}
 {% block content %}
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <style>
  body{ background-color:#060817;}
  .college_img{
@@ -12,7 +14,7 @@
   /* add transition effect to the image */
   transition: all 0.5s ease;
   border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-  
+
  }
 
  .card-body{
@@ -28,9 +30,10 @@
 <div style=" margin-top:1%;display: flex;" class = "border-color">
         <div class="card p-2 m-2" style="background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
           <!-- <img src="https://i.ibb.co/2Ph3FPN/LNM-2.png" class="card-img-top" alt="..."> -->
-          <img src="https://i.ibb.co/sghkFjN/shop.png" class="card-img-top" alt="...">
+          <!-- <img src="https://i.ibb.co/sghkFjN/shop.png" class="card-img-top" alt="..."> -->
+          <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_uqs1ib9v.json"  background="transparent"  speed="1"  style="width: 252px; height: 202px;"  loop  autoplay></lottie-player>
           <div class="card-body">
-            <h5 class="card-title">IIITL-Shop</h5>
+            <h5 class="card-title">IIITL-Store</h5>
             <p class="card-text">A go to store for all your college needs and to sell unused items
             </p>
             <a href="/LNMshop" class="btn btn-outline-primary">Enter The store</a>
@@ -39,7 +42,8 @@
 
         <div class="card p-2 m-2" style="background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
           <!-- <img src="https://i.ibb.co/mRQt1c7/LNM-3.png" class="card-img-top" alt="..."> -->
-          <img src="https://i.ibb.co/WF5RvqS/taxi.png" class="card-img-top" alt="...">
+          <!-- <img src="https://i.ibb.co/WF5RvqS/taxi.png" class="card-img-top" alt="..."> -->
+          <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_hsabbeks.json"  background="transparent"  speed="1"  style="width: 252px; height: 210px;"  loop  autoplay></lottie-player>
           <div class="card-body">
             <h5 class="card-title">IIITL-Taxi</h5>
             <p class="card-text">Find your ride along companion for your City rides with ease

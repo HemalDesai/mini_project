@@ -117,6 +117,11 @@
     margin-right: 20px;
     object-fit: cover;
   }
+ 
+  .card mb-4 rounded-end p-3{
+  }
+
+  
 </style>
 
 <div id="wrapper">
@@ -149,9 +154,9 @@
               {% for category in categories%}
               <form method="POST" action="{% url 'LNMshop_home' %}">
                 {% csrf_token %}
-                <button type="submit" class="b12 button" name="category">
+                <button type="submit" class="b12 button" name="category" value="{{category}}">
 
-                  {% if category == "Electronics" %}
+                  {% if category == "Electronics" %}  
                   <img src="https://i.ibb.co/wMc3tBN/Pngtree-vector-phone-cell-icon-3792408.png" width="40px"
                     height="40px" alt="...">
                   {% elif category == "All" %}
@@ -255,7 +260,7 @@
             {% if products %}
             {% for product in products %}
             <div class="col mx-auto ">
-              <div class="card mb-4 rounded-end p-3" style="width: 18rem; background-color:   #f6f6f7;">
+              <div class="card mb-4 rounded-end p-3" style="width: 18rem; background-color:#f6f6f7; border-style:solid  ; ">
                 <img src="{{product.photo.url}}" class="card-img-top" style="height: 200px; object-fit: contain;"
                   alt="...">
                 <div class="card-body text-center">
