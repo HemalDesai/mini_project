@@ -1,13 +1,32 @@
 {% extends 'common/base_navbar.html' %}
 {% load static %}
 {% block content %}
+<style>
+ body{ background-color:#060817;}
+ .college_img{
+  /* add border to the image */
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
+  /* add shadow to the image */
+  box-shadow: 0 0 5px whitesmoke;
+  /* add transition effect to the image */
+  transition: all 0.5s ease;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+  
+ }
 
+ .card-body{
+  color: whitesmoke;
+ }
+
+
+</style>
 
 <div>
-  <img src="https://i.ibb.co/cXvnhnT/deeeeeee.jpg" class="img-fluid" alt="Responsive image" style="width: 100%;">
+  <img src="https://i.ibb.co/cXvnhnT/deeeeeee.jpg" class="college_img" alt="Responsive image" style="width: 100%;">
 </div>
-<div style=" margin-top:1%;display: flex;">
-        <div class="card p-2 m-2" style="width: 17rem;height:26 rem; border:3px solid #dc3545; margin-top: 200px;">
+<div style=" margin-top:1%;display: flex;" class = "border-color">
+        <div class="card p-2 m-2" style="background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
           <!-- <img src="https://i.ibb.co/2Ph3FPN/LNM-2.png" class="card-img-top" alt="..."> -->
           <img src="https://i.ibb.co/sghkFjN/shop.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -18,7 +37,7 @@
           </div>
         </div>
 
-        <div class="card p-2 m-2 mx-auto" style="width: 17rem;height:26rem; border:3px solid #dc3545;">
+        <div class="card p-2 m-2" style="background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
           <!-- <img src="https://i.ibb.co/mRQt1c7/LNM-3.png" class="card-img-top" alt="..."> -->
           <img src="https://i.ibb.co/WF5RvqS/taxi.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -28,14 +47,14 @@
             <a href="/LNMtaxi" class="btn btn-outline-warning">Find your partner</a>
           </div>
         </div>
-        <div class="card p-2 m-2" style="width: 17rem;height:26rem; border:3px solid #dc3545;">
+        <div class="card p-2 m-2" style="background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
           <!-- <img src="https://i.ibb.co/2Ph3FPN/LNM-2.png" class="card-img-top" alt="..."> -->
           <img src="https://i.ibb.co/xCz1W2g/shopping-3.png" class="card-img-top" alt="..." style="margin-top :10px;">
           <div class="card-body">
             <h5 class="card-title">IIITL-Share</h5>
             <p class="card-text">A platform to share your orders with your college mates.
             </p>
-            <a href="/LNMfood" class="btn btn-outline-success">Share your order</a>
+            <a href="/LNMfood" class="btn btn-outline-success" style="color:#39FF14">Share your order</a>
           </div>
         </div>
       </div>
