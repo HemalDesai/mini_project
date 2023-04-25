@@ -83,7 +83,7 @@
   .solution_card .so_top_icon {}
 
   .solution_card .solu_title h3 {
-    color: #212121;
+    color: white;
     font-size: 1.3rem;
     margin-top: 13px;
     margin-bottom: 13px;
@@ -243,6 +243,11 @@
     background: #dc3545;
     border-radius: 4px;
   }
+/* 
+  body {
+    background-color:#060817;
+  } */
+
 </style>
 
 <body>
@@ -250,7 +255,7 @@
     <div id="sidebar-wrapper" style="width:300px;">
       <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 290px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-          style="font-size:30px;">
+        style="margin-top:20px;;font-size:25px;font-family: 'Josefin Sans', sans-serif;">
           <img src="https://i.ibb.co/7r4sj7R/IIITL-logo-1.png" style="width:50px; margin-right:8px;">
           IIITL-Connect
         </a>
@@ -285,7 +290,7 @@
               About Us
             </a>
           </li>
-          <li>
+          <li >
             <a href="{% url 'contact' %}">
               <i class="w-25 fas fa-address-book fa-lg me-3" aria-hidden="true"></i>
               Contact Us
@@ -302,7 +307,7 @@
         
       </div>
     </div>
-    <div id="content-wrapper">
+    <div id="content-wrapper" style="background-color:#060817;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
@@ -312,14 +317,14 @@
 
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-              <div class="container-fluid">
+              <div class="container-fluid" style="background-color: #060817;;">
 
                 <div class="row ms-5">
                   <div class="col">
 
-                    <div class="row solution_cards_box">
+                    <div class="row solution_cards_box" style="background-color:#060817;">
                       {% for blog in blogs %}
-                      <div class="solution_card m-2" style="max-width: 20rem;">
+                      <div class="solution_card m-2" style="color:whitesmoke; background-color: #150f30; max-width: 20rem;">
                         <div class="hover_color_bubble"></div>
                         <div class="so_top_icon">
                           <svg id="Layer_1" enable-background="new 0 0 512 512" height="50" viewBox="0 0 512 512"
@@ -392,7 +397,7 @@
                             </g>
                           </svg>
                         </div>
-                        <div class="solu_title">
+                        <div class="solu_title" >
                           <h3>{{blog.username_id}} <br> {{blog.date}}, {{blog.time}} </h3>
                         </div>
                         <div class="solu_description">
@@ -403,7 +408,7 @@
                             <strong>APPROX. FARE PER HEAD: ₹</strong> {{blog.fare}}<br>
 
                           </p>
-                          <a class="btn btn-warning border rounded">Contact : <svg xmlns="http://www.w3.org/2000/svg"
+                          <a class="btn btn-warning border rounded" style="color:black">Contact : <svg xmlns="http://www.w3.org/2000/svg"
                               width="16" height="16" fill="currentColor" class="bi bi-telephone-plus"
                               viewBox="0 0 16 16">
                               <path
