@@ -26,9 +26,26 @@
     font-size: 12px;
   }
 
-  #sidebar{
-    
-  }
+   /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #060817; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
   #sidebar-wrapper {
     background-color: #0f0f0f;
@@ -72,8 +89,9 @@
   }
 
   .sidebar-nav li a:hover {
-    background: #dc3545;
+    background: #FFF0F5;
     border-radius: 4px;
+    color:black;
   } 
 </style>
 
@@ -88,7 +106,6 @@
         </a>
         <hr>
         <ul class="sidebar-nav flex-column mb-auto">
-
           <li>
             <a href="{% url 'about' %}">
               <i class="w-25 fas fa-bullhorn fa-lg me-3" aria-hidden="true"></i>

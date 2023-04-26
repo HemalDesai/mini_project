@@ -54,11 +54,12 @@
 
     z-index: 1;
     position: fixed;
-    width: 280px;
+    width: 110px;
     height: 100%;
     overflow-y: auto;
     background: rgb(24, 23, 23);
     opacity: 0.9;
+    border-right: 1px solid #3d3d29;
   }
 
   #content-wrapper {
@@ -104,12 +105,33 @@
   input[type=number] {
     -moz-appearance: textfield;
   }
+
+   /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #060817; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 </style>
 
 <body>
   <div id="wrapper">
-    <div id="sidebar-wrapper" style="width:300px;">
-      <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 290px;">
+    <div id="sidebar-wrapper" style="width:250px;">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 250px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
         style="margin-top:20px;;font-size:25px;font-family: 'Josefin Sans', sans-serif;">
           <img src="https://i.ibb.co/7r4sj7R/IIITL-logo-1.png" style="width:50px; margin-right:8px;">
@@ -129,12 +151,12 @@
               Place Ad
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="{% url 'user_wishlist' %}">
               <i class="w-25 fas fa-heart fa-lg me-3" aria-hidden="true"></i>
               Wishlist
             </a>
-          </li>
+          </li> -->
           <li>
             <a href="{% url 'view_product' %}">
               <i class="w-25 fas fa-box fa-lg me-3" aria-hidden="true"></i>
@@ -143,7 +165,7 @@
           </li>
 
         </ul>
-        <br />
+
         <hr>
         <ul class="sidebar-nav flex-column mb-auto">
 
@@ -171,8 +193,8 @@
        
       </div>
     </div>
-    <div id="content-wrapper">
-      <div class="container-fluid">
+    <div id="content-wrapper" style="margin-left: -10px;">
+      <div class="">
         <div class="row">
           <div class="col-lg-12">
 

@@ -207,6 +207,7 @@
     overflow-y: auto;
     background: rgb(24, 23, 23);
     opacity: 0.9;
+    border-right: 1px solid #3d3d29;
   }
 
   #content-wrapper {
@@ -243,16 +244,39 @@
   }
 
 
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #060817; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* 
+   body {
+    background-color: #060817;
+   } */
 
 
 
 </style>
 
-<body>
+<body style="background-color: #060817;">
   <div id="wrapper">
-    <div id="sidebar-wrapper" style="width:300px;">
-      <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 290px;">
+    <div id="sidebar-wrapper" style="width:250px;">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 245px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
         style="margin-top:20px;;font-size:25px;font-family: 'Josefin Sans', sans-serif;">
           <img src="https://i.ibb.co/7r4sj7R/IIITL-logo-1.png" style="width:50px; margin-right:8px;">
@@ -278,7 +302,7 @@
         </li>
 
       </ul>
-        <br/><br/><br/><br/>
+        <br/><br/>
         <hr>
         <ul class="sidebar-nav flex-column mb-auto">
 
@@ -305,7 +329,7 @@
        
       </div>
     </div>
-    <div id="content-wrapper">
+    <div id="content-wrapper" style="background-color:#060817;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
@@ -322,7 +346,7 @@
 
         <div class="row solution_cards_box">
           {% for blog in user_blogs %}
-          <div class="solution_card m-1" style="max-width: 21rem;">
+          <div class="solution_card m-1" style="background-color: #150f30 ; max-width: 21rem;">
             <div class="hover_color_bubble"></div>
             <div class="so_top_icon">
               <svg id="Layer_1" enable-background="new 0 0 512 512" height="50" viewBox="0 0 512 512" width="40"
@@ -395,10 +419,10 @@
                 </g>
               </svg>
             </div>
-            <div class="solu_title">
+            <div class="solu_title" style="color:white"> 
               <!-- <h3>For {{blog.date}}, {{blog.time}} </h3> -->
             </div>
-            <div class="solu_description">
+            <div class="solu_description" style="color:whitesmoke">
               <p class="card-text"><strong>Brand Name :</strong> {{blog.pickup}}<br>
                 <strong>Offer :</strong> {{blog.drop}}<br>
                 <strong>Amount Required :</strong> {{blog.space}}<br>
@@ -406,7 +430,7 @@
                 <!-- <strong>APPROX. FARE PER HEAD: ₹</strong> {{blog.fare}}<br> -->
 
               </p>
-              <a class="btn btn-warning border rounded">Contact : <svg xmlns="http://www.w3.org/2000/svg" width="16"
+              <a class="btn btn-warning border rounded" style="color:black">Contact : <svg xmlns="http://www.w3.org/2000/svg" width="16"
                   height="16" fill="currentColor" class="bi bi-telephone-plus" viewBox="0 0 16 16">
                   <path
                     d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
@@ -417,7 +441,7 @@
               </a>
               <form method="POST" action="{% url 'delete_blog' id=blog.id %}">
             {% csrf_token %}
-            <button class="blog__button mt-4">Delete This Request</button>
+            <button class="blog__button mt-4" style="color:black">Delete This Request</button>
         </form>
             </div>
           </div>

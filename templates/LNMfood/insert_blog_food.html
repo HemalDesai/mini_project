@@ -15,6 +15,26 @@
 </head>
 
 <style>
+   /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #060817; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -108,6 +128,7 @@
     overflow-y: auto;
     background: rgb(24, 23, 23);
     opacity: 0.9;
+    border-right: 1px solid #3d3d29;
   }
 
   #content-wrapper {
@@ -116,8 +137,12 @@
     padding: 15px;
     padding-left: 280px;
 
+  }
 
 
+
+  body{
+    background-color: #FFFFE0;
   }
 
   .sidebar-nav {
@@ -142,13 +167,33 @@
     background: #dc3545;
     border-radius: 4px;
   }
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFFFE0; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 </style>
 
 
 <body>
   <div id="wrapper">
-    <div id="sidebar-wrapper" style="width:300px;">
-      <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 290px;">
+    <div id="sidebar-wrapper" style="width: 250px;">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 245px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
         style="margin-top:20px;;font-size:25px;font-family: 'Josefin Sans', sans-serif;"/>
           <img src="https://i.ibb.co/7r4sj7R/IIITL-logo-1.png" style="width:50px; margin-right:8px;">
@@ -175,7 +220,7 @@
           </li>
 
         </ul>
-        <br /><br /><br /><br />
+        <br /><br />
         <hr>
         <ul class="sidebar-nav flex-column mb-auto">
 

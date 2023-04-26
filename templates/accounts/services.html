@@ -21,16 +21,50 @@
   color: whitesmoke;
  }
 
+ #card_style{
+  
+  background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+  /* remove the pointed edges make it curvy */
+  margin-right: 30px;
+  /* add transition effect to the card */
+  transition: all 0.5s ease;
+  /* add shadow to the card */
+  box-shadow: 0 0 5px whitesmoke;
+  /* add margin to the card */
+  /* margin: 10px; */
+  /* add padding to the card */
+  padding: 10px;
+ }
+
+ #card_style:hover{
+    /* add animation on hover  */
+    transform: scale(1.1);
+    /* add shadow on hover */
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    /* change the border color on hover */
+    border-color: #3b3b3b;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+
+ }
+
+
+
+
+ 
 
 </style>
+
+
 
 <!-- <div> -->
   <!-- <img src="https://i.ibb.co/cXvnhnT/deeeeeee.jpg" class="college_img" alt="Responsive image" style="width: 100%;"> -->
 <!-- </div> -->
-<div style=" margin-top:1%;margin-left:0px;display: flex;" class = "border-color">
-        <div class="card p-2 m-2" style="background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
+<div style=" margin-top:6%;margin-left:0px;display: flex;" class = "border-color" id="particles-js">
+        <div class="card p-2 m-2" id="card_style" >
           <!-- <img src="https://i.ibb.co/2Ph3FPN/LNM-2.png" class="card-img-top" alt="..."> -->
           <!-- <img src="https://i.ibb.co/sghkFjN/shop.png" class="card-img-top" alt="..."> -->
+          
           <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_uqs1ib9v.json"  background="transparent"  speed="1"  style="width: 252px; height: 202px;"  loop  autoplay></lottie-player>
           <div class="card-body" style="margin-top:10px;">
             <h5 class="card-title">IIITL-Store</h5>
@@ -40,7 +74,7 @@
           </div>
         </div>
 
-        <div class="card p-2 m-2" style="margin-right:40px; background-color: #150f30;width: 17rem;height:26 rem; border:2px solid whitesmoke; margin-top: 200px;box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
+        <div class="card p-2 m-2" id="card_style" >
           <!-- <img src="https://i.ibb.co/mRQt1c7/LNM-3.png" class="card-img-top" alt="..."> -->
           <!-- <img src="https://i.ibb.co/WF5RvqS/taxi.png" class="card-img-top" alt="..."> -->
           <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_hsabbeks.json"  background="transparent"  speed="1"  style="width: 252px; height: 210px;"  loop  autoplay></lottie-player>
@@ -51,7 +85,7 @@
             <a href="/LNMtaxi" class="btn btn-outline-warning">Find your partner</a>
           </div>
         </div>
-        <div class="card p-2 m-2" style="background-color: #150f30;width: 17rem;height:26 rem;margin-top: 200px; border:2px solid whitesmoke; box-shadow: 0 0 5px black;border-image: linear-gradient(to right, darkblue, darkorchid) 1;">
+        <div class="card p-2 m-2" id="card_style" >
           <!-- <img src="https://i.ibb.co/2Ph3FPN/LNM-2.png" class="card-img-top" alt="..."> -->
           <!-- <img src="https://i.ibb.co/xCz1W2g/shopping-3.png" class="card-img-top" alt="..." style="margin-top :10px;"> -->
           <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_0d398xcs.json"  background="transparent"  speed="1.5"  style="width: 252px; height: 202px;"  loop  autoplay></lottie-player>
@@ -63,4 +97,9 @@
           </div>
         </div>
       </div>
+
+
+
+
+  
 {% endblock %}
