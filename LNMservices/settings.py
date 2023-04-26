@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'LNMshop',
     'LNMtaxi',
     'LNMfood',
-    'LNMlnf',
     'accounts',
 ]
 
